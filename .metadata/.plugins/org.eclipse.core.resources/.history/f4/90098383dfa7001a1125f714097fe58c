@@ -1,0 +1,17 @@
+package preparedstatements;
+
+import java.sql.*;
+
+/* Write a program to insert image file into the database table*/
+
+
+public class StoreImageFile 
+{
+	public static void main(String[] args) 
+	{
+		//declare resources
+		Connection con=null;
+		PreparedStatement pstmt=null;
+	}
+
+}

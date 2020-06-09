@@ -1,0 +1,14 @@
+package preparedstatements;
+
+import java.util.Scanner;
+
+/*Q.13 write a jdbc program to accept student id from end user 
+ * and delete the specific record from table*/
+
+public class DeleteStudent1
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc1=new Scanner(System.in);
+	}
+}

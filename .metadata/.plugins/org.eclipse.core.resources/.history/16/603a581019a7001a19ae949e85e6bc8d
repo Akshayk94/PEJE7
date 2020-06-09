@@ -1,0 +1,60 @@
+package customer;
+
+import java.sql.*;
+
+public class CustomerOperations
+{
+	static Connection con;
+	
+	static
+	{
+		try 
+		{
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/peje7?user=root&password=akshay");
+		} 
+		catch (ClassNotFoundException | SQLException e)
+		{
+			e.printStackTrace();
+		}
+	}
+	//search flight details
+	
+	public void findFlightDetails(String source,String destination)
+	{
+		//declare resources
+		PreparedStatement pstmt=null;
+		ResultSet rs=null;
+		//prepare sql query
+		//selection or projection
+		
+		String query="select service_provider from flight_data where source=? and destination=?";
+		//execute the sql query
+		try 
+		{
+			pstmt=con.prepareStatement(query);
+			pstmt.setString(1, source);
+			pstmt.setString(2, destination);
+			
+			rs=pstmt.executeQuery();
+			//display the names of service providers
+			System.out.println("SERVICE NAME");
+			System.out.println("--------------");
+			while(rs.next())
+			{
+				String service=rs.getString("service_provider");
+				
+				System.out.println(service);
+			}
+		} 
+		catch (SQLException e)
+		{
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+	//book tickets
+}

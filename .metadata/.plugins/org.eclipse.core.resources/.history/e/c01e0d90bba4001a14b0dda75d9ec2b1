@@ -1,0 +1,9 @@
+package preparedstatements;
+
+public class InsertStudent2
+{
+	public static void main(String[] args) 
+	{
+
+	}
+}

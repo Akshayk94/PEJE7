@@ -1,0 +1,67 @@
+package test;
+
+import java.util.Scanner;
+
+public class FlightSimulator 
+{
+
+	public static void main(String[] args)
+	{
+		Scanner sc1=new Scanner(System.in);
+		
+		System.out.println("SELECT TYPE OF USER");
+		System.out.println("PRESS 1 FOR ADMIN");
+		System.out.println("PRESS 2 FOR CUSTOMER");
+		
+		int choice=sc1.nextInt();
+		
+		if(choice==1)
+		{
+			displayAdminOperations();
+		}
+		else if(choice==2)
+		{
+			displayCustomerOperations();
+		}
+		
+	}
+	
+	static void displayAdminOperations()
+	{
+		System.out.println("1: ADD FLIGHT DETAILS");
+		System.out.println("2: DELETE FLIGHT DETAILS");
+		System.out.println("3: DISPLAY FLIGHT DETAILS");
+	}
+	
+	static void displayCustomerOperations()
+	{
+		System.out.println("1: SEARCH FLIGHT");
+		System.out.println("2: BOOK TICKETS");
+	}
+
+	static void addFlightDetails()
+	{
+		
+	}
+	
+	static void deleteFlightDetails()
+	{
+		
+	}
+	
+	static void displayFlightDetails()
+	{
+		
+	}
+	
+	static void searchFlightDetails()
+	{
+		
+	}
+	
+	static void bookTickets()
+	{
+		
+	}
+
+}

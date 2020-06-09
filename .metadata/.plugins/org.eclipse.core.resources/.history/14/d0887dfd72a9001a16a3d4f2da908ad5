@@ -1,0 +1,14 @@
+package functions;
+
+import java.util.Scanner;
+
+public class AreaCircle 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc1=new Scanner(System.in);
+		
+		System.out.println("ENTER RADIUS OF CIRCLE");
+		double radius=sc1.nextDouble();
+	}
+}

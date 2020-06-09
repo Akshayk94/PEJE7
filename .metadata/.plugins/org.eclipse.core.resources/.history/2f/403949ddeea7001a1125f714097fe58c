@@ -1,0 +1,35 @@
+package functions;
+
+import java.sql.*;
+
+public class MultiplyNumbers 
+{
+	public static void main(String[] args) 
+	{
+		Connection con=null;
+		CallableStatement cstmt=null;
+		
+		try 
+		{
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/peje7?user=root&password=akshay");
+		
+			cstmt=con.prepareCall("{?=call multiplynumbers(?,?)}");
+			//input placeholders
+			cstmt.setDouble(2, 50);
+			cstmt.setDouble(3, 5);
+			
+			//output placeholder
+			cstmt.registerOutParameter(1, Types.DOUBLE);
+			
+			cstmt.execute();
+			
+			System.out.println("MULTIPLICATION IS: "+cstmt.getDouble(1));
+		} 
+		catch (ClassNotFoundException | SQLException e) 
+		{
+			e.printStackTrace();
+		}
+	}
+}

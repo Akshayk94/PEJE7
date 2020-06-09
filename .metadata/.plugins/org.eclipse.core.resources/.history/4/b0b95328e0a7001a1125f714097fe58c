@@ -1,0 +1,32 @@
+package preparedstatements;
+
+import java.sql.*;
+
+/* Write a program to insert image file into the database table*/
+
+
+public class StoreImageFile 
+{
+	public static void main(String[] args) 
+	{
+		//declare resources
+		Connection con=null;
+		PreparedStatement pstmt=null;
+		
+		//prepare sql query
+		String query="insert into course_data values(?,?,?)";
+		
+		//connectivity steps
+		try 
+		{
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/peje7?user=root&password=akshay");
+		} 
+		catch (ClassNotFoundException | SQLException e) 
+		{
+			e.printStackTrace();
+		}
+	}
+
+}

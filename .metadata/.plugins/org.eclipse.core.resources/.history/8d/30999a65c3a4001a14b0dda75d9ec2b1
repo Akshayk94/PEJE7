@@ -1,0 +1,14 @@
+package preparedstatements;
+
+/*Q.14 display the names of all students based on user values
+ * accept student stream from end user
+ * display only those students having percentage greater than 70*/
+
+public class DisplayStudentDetails {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
