@@ -25,5 +25,34 @@
   	<url-pattern>/secondlink</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>servlet3</servlet-name>
+  	<servlet-class>test.HttpDemo3</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>servlet3</servlet-name>
+  	<url-pattern>/employeelink</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>servlet4</servlet-name>
+  	<servlet-class>test.HttpDemo4</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>servlet4</servlet-name>
+  	<url-pattern>/courselink</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>servlet5</servlet-name>
+  	<servlet-class>test.HttpDemo5</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>servlet5</servlet-name>
+  	<url-pattern>/calculate</url-pattern>
+  </servlet-mapping>
   
 </web-app>
