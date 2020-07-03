@@ -1,0 +1,14 @@
+@charset "ISO-8859-1";
+
+form
+{
+	background-color: teal;
+	margin:20px;
+	padding:20px;
+	color:white;
+}
+	
+input,label
+{
+	font-size: 20px;
+}
