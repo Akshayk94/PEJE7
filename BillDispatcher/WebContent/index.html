@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>BILL CALCULATION</title>
+<style type="text/css">
+	input,label,select
+	{
+		font-size: 30px;
+		
+	}
+	
+	form
+	{
+		background-color: teal;
+		color:white;
+		padding:20px;
+	}
+</style>
+</head>
+<body>
+	<form action="firstlink">
+		<h1>ENTER METER READINGS</h1>
+		
+		<label>ENTER CURRENT READING</label>
+		<input type="number" name="current" placeholder="CURRENT READING" /><br><br>
+		
+		<label>ENTER PREVIOUS READING</label>
+		<input type="number" name="previous" placeholder="PREVIOUS READING"/><br><br>
+		
+		<label>SELECT CUSTOMER TYPE</label>
+		<select name="customertype">
+			<option value="residential">RESIDENTIAL</option>
+			<option value="commercial">COMMERCIAL</option>
+		</select><br><br>
+		
+		<input type="submit" value="GET BILL" />
+	</form>
+</body>
+</html>
