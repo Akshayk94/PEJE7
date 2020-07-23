@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CAB SERVICE</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+<style>
+	h1,h2
+	{
+		text-align: center;
+	}
+</style>
+
+</head>
+<body>
+	<div class="container">
+		<h1>FAIR CHARGE CALCULATOR</h1>
+		<div class="row">
+			<div class="col">
+				<div class="card text-white bg-primary">
+					<img alt="" src="img/auto.jpg" />
+					
+					<div class="card-body">
+						<h2>AUTO</h2>
+						<form action="autobill">
+							<div class="form-group">
+								<input type="text" name="km" class="form-control" placeholder="ENTER NO OF KM" />
+							</div>
+							<div class="form-group">
+								<input type="text" name="minutes" class="form-control" placeholder="ENTER WAITING MINUTES" />
+							</div>
+							
+							<div>
+							 	<input type="submit" value="GET BILL" class="btn btn-dark" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card text-white bg-success">
+					<img alt="" src="img/prime.png" />
+				
+					<div class="card-body">
+						<h2>PRIME CAB</h2>
+						<form action="primebill">
+							<div class="form-group">
+								<input type="text" name="km" class="form-control" placeholder="ENTER NO OF KM" />
+							</div>
+							<div class="form-group">
+								<input type="text" name="minutes" class="form-control" placeholder="ENTER WAITING MINUTES" />
+							</div>
+							
+							<div>
+							 	<input type="submit" value="GET BILL" class="btn btn-dark" />
+							</div>
+						</form>
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="col">
+				<div class="card text-white bg-danger">
+					<img alt="" src="img/mini.png" />
+					<div class="card-body">
+						<h2>MINI CAB</h2>
+						<form action="minibill">
+							<div class="form-group">
+								<input type="text" name="km" class="form-control" placeholder="ENTER NO OF KM" />
+							</div>
+							<div class="form-group">
+								<input type="text" name="minutes" class="form-control" placeholder="ENTER WAITING MINUTES" />
+							</div>
+							
+							<div>
+							 	<input type="submit" value="GET BILL" class="btn btn-dark" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div> 
+		</div>
+	</div>
+</body>
+</html>
