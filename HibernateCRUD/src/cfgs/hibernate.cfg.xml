@@ -22,8 +22,12 @@
         <!-- SQL dialect -->
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 
+		<property name="show_sql">true</property>
+
 		<!-- Add mapping file -->
         <mapping resource="cfgs/student.hbm.xml"/>
+        
+        <mapping resource="cfgs/employee.hbm.xml"/>
 
     </session-factory>
 
